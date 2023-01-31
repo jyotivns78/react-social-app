@@ -1,50 +1,95 @@
-@import "../../style.scss";
+// @import "../../style.scss";
 
-.stories {
+// .stories {
+//   display: flex;
+//   gap: 10px;
+//   height: 250px;
+//   margin-bottom: 30px;
+
+.stories
+{
   display: flex;
   gap: 10px;
   height: 250px;
   margin-bottom: 30px;
+  width: 200px;
+  background: rosybrown;
+  border-radius: 10px;
+}
 
-  @include mobile {
-    height: 50px;
-    margin-bottom: 0;
-    justify-content: space-between;
-  }
 
-  @include tablet{
-    height: 150px;
-    gap: 20px;
-  }
 
-  .story {
-    flex: 1;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
 
-    @include mobile {
-      flex: none;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    span {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      color: white;
-      font-weight: 500;
-      @include mobile {
-        display: none;
-      }
-    }
+//   @include mobile {
+//     height: 50px;
+//     margin-bottom: 0;
+//     justify-content: space-between;
+//   }
+
+//   @include tablet{
+//     height: 150px;
+//     gap: 20px;
+//   }
+
+//   .story {
+//     flex: 1;
+//     border-radius: 10px;
+//     overflow: hidden;
+//     position: relative;
+
+
+.story
+{
+  flex: 1;
+  // overflow: hidden;
+  position: relative;
+ 
+}
+
+//     @include mobile {
+//       flex: none;
+//       width: 50px;
+//       height: 50px;
+//       border-radius: 50%;
+//     }
+
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//     }
+
+.story img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.story span
+{
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  font-weight: 500;
+}
+
+
+
+
+
+//     span {
+//       position: absolute;
+//       bottom: 10px;
+//       left: 10px;
+//       color: white;
+//       font-weight: 500;
+//       @include mobile {
+//         display: none;
+//       }
+//     }
 
     button {
       position: absolute;
@@ -61,14 +106,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
-      @include mobile {
-       left: 0;
-       right: 0;
-       top: 0;
-       bottom: 0;
-       margin: auto;
-      }
     }
-  }
-}
+
+//       @include mobile {
+//        left: 0;
+//        right: 0;
+//        top: 0;
+//        bottom: 0;
+//        margin: auto;
+//       }
+//     }
+//   }
+// }

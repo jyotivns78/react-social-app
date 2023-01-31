@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider, Outlet, Navigate } from 'react-rou
 import NavBar from './components/navbar/Navbar';
 import LeftBar from './components/leftBar/LeftBar';
 import RightBar from './components/rightbar/RightBar';
-// import Home from './pages/home/Home';
+import Home from './pages/home/Home';
 // import Profile from './pages/profile/Profile';
 import './style.scss';
 import { useContext } from 'react';
@@ -75,7 +75,7 @@ function App() {
       children: [
         {
           path: "/",
-          // element: <Home />,
+          element: <Home />,
         },
         {
           path: "/profile/:id",
