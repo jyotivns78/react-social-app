@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/authContext.js";
-import "./Login.css";
+import "./Login.scss";
 
 const Login = () => {
   const [inputs, setInputs] = useState({
@@ -30,7 +30,7 @@ const Login = () => {
   return (
     <div className="login">
       <div className="card">
-        <div className="left">
+        <div className="left2">
           <h1>Hello World.</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,

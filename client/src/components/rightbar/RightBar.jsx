@@ -1,5 +1,5 @@
 import React from "react";
-import './RightBar.css';
+import './RightBar.scss';
 
 
 
@@ -9,12 +9,12 @@ const RightBar = () => {
     return (
         <div className="rightBar">
             <div className="container">
-                <div className="item">
-                    <span>Suggestions For You</span>
+                <div className="item1">
+                    <p>Suggestions For You</p>
                     <div className="user">
                         <div className="userInfo">
                             <img src="https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                            alt="" />
+                            alt="" style={{ width: "40px", height: "40px", borderRadius: "50%", objectFit: "cover"}}/>
                             <span>Jyoti</span>
                         </div>
                         <div className="buttons">
@@ -22,12 +22,13 @@ const RightBar = () => {
                             <button>Dismiss</button>
                         </div>
                     </div>
-                    <div className="item">
+                    </div>
+                    <div className="item2">
                         <span>Latest Activities</span>
                         <div className="user">
                             <div className="userInfo">
                                 <img src="https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                alt="" />
+                                alt="" style={{ width: "40px", height: "40px", borderRadius: "50%", objectFit: "cover"}}/>
                                 <p>
                                     <span>Jyoti</span> changed their cover picture
                                 </p>
@@ -37,7 +38,7 @@ const RightBar = () => {
                         <div className="user">
                             <div className="userInfo">
                                 <img src="https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                alt="" />
+                                alt="" style={{ width: "40px", height: "40px", borderRadius: "50%", objectFit: "cover"}}/>
                                 <p>
                                     <span>Jesh</span> changed their cover picture
                                 </p>
@@ -47,7 +48,7 @@ const RightBar = () => {
                         <div className="user">
                             <div className="userInfo">
                                 <img src="https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                alt="" />
+                                alt="" style={{ width: "40px", height: "40px", borderRadius: "50%", objectFit: "cover"}}/>
                                 <p>
                                     <span>Jiya</span> changed their cover picture
                                 </p>
@@ -56,8 +57,8 @@ const RightBar = () => {
                         </div>
                         <div className="user">
                             <div className="userInfo">
-                                <img src="https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                alt="" />
+                                <img className="image" src="https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                alt="" style={{ width: "40px", height: "40px", borderRadius: "50%", objectFit: "cover"}}/>
                                 <p>
                                     <span>Raj</span> changed their cover picture
                                 </p>
@@ -65,7 +66,7 @@ const RightBar = () => {
                             <span>1 min ago</span>
                         </div>
                     </div>
-                    <div className="item">
+                    <div className="item3">
                         <span>Online Friends</span>
                         <div className="user">
                             <div className="userInfo">
@@ -74,6 +75,7 @@ const RightBar = () => {
                                 <div className="online">
                                     <span>Jyoti</span>
                                 </div>
+                            </div>
                             </div>
                             
                             <div className="user">
@@ -160,8 +162,8 @@ const RightBar = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            // </div>
+        // </div>
     )
 }
 

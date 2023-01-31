@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
-import './Comments.css';
+import './Comments.scss';
 import { AuthContext } from "../../context/authContext";
-import { useQuery, useMutation, useQueryClient } from "transtack/react-query";
+import { useQuery, useQueryClient, useMutation } from "@tanstack/react-query";
 import { makeRequest } from "../../axios";
 import moment from 'moment';
 

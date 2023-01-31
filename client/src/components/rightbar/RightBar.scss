@@ -1,4 +1,4 @@
-@import "../../style.css";
+@import "../../style.scss";
 
 .rightBar {
   @include themify($themes) {
@@ -22,14 +22,51 @@
 
     .container {
       padding: 20px;
+    }
 
-      .item {
+    .item1 {
+      -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+      -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+      box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: themed("bg");
+      min-height: 100px;
+      min-width: 200px;
+    }
+
+      .item2 {
         -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
         -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
         box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
         padding: 20px;
         margin-bottom: 20px;
         background-color: themed("bg");
+        min-height: 400px;
+        min-width: 200px;
+      }
+
+
+      .item3 {
+        -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+        -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: themed("bg");
+        min-height: 400px;
+        min-width: 200px;
+        
+      }
+
+
+      .item3 span
+      {
+        
+        padding-left: 30px;
+      }
+
+
 
         span {
           color: gray;
@@ -40,13 +77,15 @@
           align-items: center;
           justify-content: space-between;
           margin: 20px 0px;
+        }
 
           .userInfo {
             display: flex;
             align-items: center;
             gap: 20px;
             position: relative;
-
+          }
+       
             img {
               width: 40px;
               height: 40px;
@@ -95,7 +134,6 @@
             }
           }
         }
-      }
-    }
-  }
-}
+      
+  
+

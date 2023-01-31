@@ -1,9 +1,9 @@
-import './Post.css';
-import FavouriteBorderOutlinedIcon from "@mui/icons-material/FavouriteBorderOutlinedIcon";
-import FavouriteOutlinedIcon from "@mui/icons-material/FavouriteOutlinedIcon";
-import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlinedIcon";
-import ShareOutlinedIcon from "@mui/icons-material/ShareOutlinedIcon";
-import MoreHorizIcon from "@mui/icons-material/MoreHorizIcon";
+import './Post.scss';
+import FavouriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import FavouriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
+import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
+import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Link } from 'react-router-dom';
 import Comments from '../comments/Comments';
 import { useState } from 'react';
@@ -15,7 +15,7 @@ import { AuthContext } from '../../context/authContext';
 
 const Post = ({ post }) => {
     const [commentOpen, setCommentOpen] = useState(false);
-    const [manuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const { currentUser } = useContext(AuthContext);
 
@@ -80,7 +80,7 @@ const Post = ({ post }) => {
                             <span className='date'>{moment(post.createdAt).fromNow()}</span>
                         </div>
                     </div>
-                    <MoreHorizIcon onClick={() => setMenuOpen(!manuOpen)} />
+                    <MoreHorizIcon onClick={() => setMenuOpen(!menuOpen)} />
                     {menuOpen && post.userid === currentUser.id && (
                         <button onClick={handleDelete}>Delete</button>
                     )}

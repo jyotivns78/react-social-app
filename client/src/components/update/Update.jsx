@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import './Update.css';
+import './Update.scss';
 import { makeRequest } from '../../axios';
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 
 
-const Update = () => {
+const Update = ({ setOpenUpdate, user }) => {
     const [cover, setCover] = useState(null);
     const [profile, setProfile] = useState(null);
     const [texts, setTexts] = useState({

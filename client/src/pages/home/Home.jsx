@@ -1,10 +1,17 @@
 import React from "react";
-import './Home.css';
+import Stories from '../../components/stories/Stories';
+import Posts from "../../components/posts/Posts";
+import Share from "../../components/share/Share";
+import './Home.scss';
 
 
 const Home = () => {
     return (
-        <h1>Home Page</h1>
+        <div className="home">
+            <Stories />
+            <Share />
+            <Posts />
+        </div>
     )
 }
 

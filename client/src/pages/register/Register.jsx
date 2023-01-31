@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Register.css';
+import './Register.scss';
 import axios from 'axios';
 
 
@@ -38,7 +38,7 @@ const Register = () => {
     return (
         <div className='register'>
             <div className='card'>
-                <div className='left'>
+                <div className='left1'>
                     <h1>Be Social</h1>
                     <p>Nulla nostrud laborum sint cupidatat commodo eiusmod,
                        commodo esse mollit est laboris anim nostrud magna.
