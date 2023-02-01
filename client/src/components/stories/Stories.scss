@@ -12,7 +12,7 @@
   gap: 10px;
   height: 250px;
   margin-bottom: 30px;
-  width: 200px;
+  width: 700px;
   background: rosybrown;
   border-radius: 10px;
 }
@@ -42,7 +42,8 @@
 .story
 {
   flex: 1;
-  // overflow: hidden;
+  overflow: hidden;
+  border-radius: 10px;
   position: relative;
  
 }
